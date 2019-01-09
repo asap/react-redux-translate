@@ -5,7 +5,7 @@ class Field extends React.Component {
   static contextType = LanguageContext;
 
   render() {
-    const {label, placeholder} = this.context === 'english'
+    const {label, placeholder} = this.context.language === 'english'
       ? { label: 'Name', placeholder: 'What is your name?'}
       : { label: 'Ονομα', placeholder: 'Πως σε λένε?'};
     return (
